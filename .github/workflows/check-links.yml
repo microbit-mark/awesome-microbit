@@ -21,4 +21,5 @@ jobs:
       with:
         ruby-version: '2.4'
     - run: gem install awesome_bot
+    - run: sudo apt-get upgrade ca-certificates
     - run: awesome_bot README.md --allow-redirect --allow-dupe --set-timeout 60
